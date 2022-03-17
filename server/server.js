@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   user: "root", // mysql에 아이디를 넣는다.
   password:"", // mysql의 비밀번호를 넣는다.
-  database: "react_express_mysql", //위에서 만든 데이터베이스의 이름을 넣는다.
+  database: "", //위에서 만든 데이터베이스의 이름을 넣는다.
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));

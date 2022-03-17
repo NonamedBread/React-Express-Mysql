@@ -3,6 +3,7 @@ import React from "react";
 export default class Example extends React.Component {
   state = {
     text: "",
+    
   };
 
   handlChange = (e) => {
@@ -22,7 +23,7 @@ export default class Example extends React.Component {
       },
       body: JSON.stringify(textbox), //textbox라는 객체를 보냄
     })
-    .then((res) => res.json()) //추가된 부분
+    .then((res) => res.json()) 
     .then((json) => {
       console.log(json);
       this.setState({
