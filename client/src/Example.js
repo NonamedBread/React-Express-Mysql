@@ -21,6 +21,13 @@ export default class Example extends React.Component {
         "content-type": "application/json",
       },
       body: JSON.stringify(textbox), //textbox라는 객체를 보냄
+    })
+    .then((res) => res.json()) //추가된 부분
+    .then((json) => {
+      console.log(json);
+      this.setState({
+        text: json.text,
+      });
     });
   };
 
